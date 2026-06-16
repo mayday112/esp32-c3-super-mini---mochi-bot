@@ -68,6 +68,9 @@ void handleTouch() {
   bool touchState = (digitalRead(TTP223_PIN) == HIGH);
   unsigned long now = millis();
 
+  static bool longPressActive = false;
+  static bool specialVideoActive = false;
+
   // Deteksi Awal Sentuh (Rising Edge)
   if (touchState && !lastTouchState) {
     if (now - lastTapTime < 400) tapCount++;
@@ -76,6 +79,8 @@ void handleTouch() {
     lastTapTime = now;
     lastTouchTime = now;
     player.resetFrames();
+    longPressActive = false;
+    specialVideoActive = false;
   }
 
   // Logika Tap (Setelah jari diangkat)
@@ -93,10 +98,17 @@ void handleTouch() {
   // Logika Long Press
   if (touchState && (now - touchStartTime > 400)) {
     if (now - touchStartTime > 3000) {
-      player.playSpecialVideo();
+      if (!specialVideoActive) {
+        player.playSpecialVideo();
+        specialVideoActive = true;
+      }
     }
     else {
-      player.playVideo(9, true); // Love (uwu)
+      if (!longPressActive) {
+        player.playVideo(9, true); // Love (uwu)
+        longPressActive = true;
+        tapCount = 0; // Reset tap count to prevent tap actions on release
+      }
     }
   }
 
