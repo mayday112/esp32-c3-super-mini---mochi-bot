@@ -1621,7 +1621,7 @@ const uint16_t INTRO_DELAYS[INTRO_FRAME_COUNT] = {
 };
 
 /// @brief Array of pointers to each frame of the INTRO Face animation
-const unsigned char* INTRO_FRAME[INTRO_FRAME_COUNT] = {
+const unsigned char* const INTRO_FRAME[INTRO_FRAME_COUNT] = {
     Intro_Intro001, Intro_Intro002, Intro_Intro003, Intro_Intro004, Intro_Intro005,
     Intro_Intro006, Intro_Intro007, Intro_Intro008, Intro_Intro009, Intro_Intro010,
     Intro_Intro011, Intro_Intro012, Intro_Intro013, Intro_Intro014, Intro_Intro015,

@@ -2292,7 +2292,7 @@ const uint16_t GIGLE_DELAYS[GIGLE_FRAME_COUNT] = {
 };
 
 /// @brief Array of pointers to each frame of the GIGLE Face animation
-const unsigned char* GIGLE_FRAME[GIGLE_FRAME_COUNT] = {
+const unsigned char* const GIGLE_FRAME[GIGLE_FRAME_COUNT] = {
     Giggle_Giggle001, Giggle_Giggle002, Giggle_Giggle003, Giggle_Giggle004, Giggle_Giggle005,
     Giggle_Giggle006, Giggle_Giggle007, Giggle_Giggle008, Giggle_Giggle009, Giggle_Giggle010,
     Giggle_Giggle011, Giggle_Giggle012, Giggle_Giggle013, Giggle_Giggle014, Giggle_Giggle015,

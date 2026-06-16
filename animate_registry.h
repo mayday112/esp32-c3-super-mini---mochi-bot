@@ -11,7 +11,7 @@ typedef struct {
     const uint16_t width;
     const uint16_t height;
     const uint16_t* delays;
-    const unsigned char** frames;
+    const unsigned char* const* frames;
 } Animate;
 
 #include "angry.h"

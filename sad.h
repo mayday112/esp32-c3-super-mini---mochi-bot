@@ -1017,7 +1017,7 @@ const uint16_t SAD_DELAYS[SAD_FRAME_COUNT] = {
 };
 
 /// @brief Array of pointers to each frame of the SAD Face animation
-const unsigned char* SAD_FRAME[SAD_FRAME_COUNT] = {
+const unsigned char* const SAD_FRAME[SAD_FRAME_COUNT] = {
     Sad_Sad001, Sad_Sad002, Sad_Sad003, Sad_Sad004, Sad_Sad005,
     Sad_Sad006, Sad_Sad007, Sad_Sad008, Sad_Sad009, Sad_Sad010,
     Sad_Sad011, Sad_Sad012, Sad_Sad013, Sad_Sad014, Sad_Sad015,

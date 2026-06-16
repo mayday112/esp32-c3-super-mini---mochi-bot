@@ -1487,7 +1487,7 @@ const uint16_t ANGRY_DELAYS[ANGRY_FRAME_COUNT] = {
 };
 
 /// @brief Array of pointers to each frame of the Angry Face animation
-const unsigned char* ANGRY_FRAME[ANGRY_FRAME_COUNT] = {
+const unsigned char* const ANGRY_FRAME[ANGRY_FRAME_COUNT] = {
     Angry_Angry001, Angry_Angry002, Angry_Angry003, Angry_Angry004, Angry_Angry005,
     Angry_Angry006, Angry_Angry007, Angry_Angry008, Angry_Angry009, Angry_Angry010,
     Angry_Angry011, Angry_Angry012, Angry_Angry013, Angry_Angry014, Angry_Angry015,

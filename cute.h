@@ -1219,7 +1219,7 @@ const uint16_t CUTE_DELAYS[CUTE_FRAME_COUNT] = {
 };
 
 /// @brief Array of pointers to each frame of the CUTE Face animation
-const unsigned char* CUTE_FRAME[CUTE_FRAME_COUNT] = {
+const unsigned char* const CUTE_FRAME[CUTE_FRAME_COUNT] = {
     Cute_Cute001, Cute_Cute002, Cute_Cute003, Cute_Cute004, Cute_Cute005,
     Cute_Cute006, Cute_Cute007, Cute_Cute008, Cute_Cute009, Cute_Cute010,
     Cute_Cute011, Cute_Cute012, Cute_Cute013, Cute_Cute014, Cute_Cute015,

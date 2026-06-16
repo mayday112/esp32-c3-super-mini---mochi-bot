@@ -1219,7 +1219,7 @@ const uint16_t UWU_DELAYS[UWU_FRAME_COUNT] = {
 };
 
 /// @brief Array of pointers to each frame of the UWU Face animation
-const unsigned char* UWU_FRAME[UWU_FRAME_COUNT] = {
+const unsigned char* const UWU_FRAME[UWU_FRAME_COUNT] = {
     UWU_UWU001, UWU_UWU002, UWU_UWU003, UWU_UWU004, UWU_UWU005,
     UWU_UWU006, UWU_UWU007, UWU_UWU008, UWU_UWU009, UWU_UWU010,
     UWU_UWU011, UWU_UWU012, UWU_UWU013, UWU_UWU014, UWU_UWU015,

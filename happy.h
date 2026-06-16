@@ -2292,7 +2292,7 @@ const uint16_t HAPPY_DELAYS[HAPPY_FRAME_COUNT] = {
 };
 
 /// @brief Array of pointers to each frame of the HAPPY Face animation
-const unsigned char* HAPPY_FRAME[HAPPY_FRAME_COUNT] = {
+const unsigned char* const HAPPY_FRAME[HAPPY_FRAME_COUNT] = {
     Happy_Happy001, Happy_Happy002, Happy_Happy003, Happy_Happy004, Happy_Happy005,
     Happy_Happy006, Happy_Happy007, Happy_Happy008, Happy_Happy009, Happy_Happy010,
     Happy_Happy011, Happy_Happy012, Happy_Happy013, Happy_Happy014, Happy_Happy015,

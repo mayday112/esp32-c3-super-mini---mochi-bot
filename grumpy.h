@@ -1822,7 +1822,7 @@ const uint16_t GRUMPY_DELAYS[GRUMPY_FRAME_COUNT] = {
 };
 
 /// @brief Array of pointers to each frame of the GRUMPY Face animation
-const unsigned char* GRUMPY_FRAME[GRUMPY_FRAME_COUNT] = {
+const unsigned char* const GRUMPY_FRAME[GRUMPY_FRAME_COUNT] = {
     Grumpy_Grumpy001, Grumpy_Grumpy002, Grumpy_Grumpy003, Grumpy_Grumpy004, Grumpy_Grumpy005,
     Grumpy_Grumpy006, Grumpy_Grumpy007, Grumpy_Grumpy008, Grumpy_Grumpy009, Grumpy_Grumpy010,
     Grumpy_Grumpy011, Grumpy_Grumpy012, Grumpy_Grumpy013, Grumpy_Grumpy014, Grumpy_Grumpy015,

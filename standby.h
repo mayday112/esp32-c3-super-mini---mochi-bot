@@ -1889,7 +1889,7 @@ const uint16_t STANDBY_DELAYS[STANDBY_FRAME_COUNT] = {
 };
 
 /// @brief Array of pointers to each frame of the STANDBY Face animation
-const unsigned char* STANDBY_FRAME[STANDBY_FRAME_COUNT] = {
+const unsigned char* const STANDBY_FRAME[STANDBY_FRAME_COUNT] = {
     Standby_Standby001, Standby_Standby002, Standby_Standby003, Standby_Standby004, Standby_Standby005,
     Standby_Standby006, Standby_Standby007, Standby_Standby008, Standby_Standby009, Standby_Standby010,
     Standby_Standby011, Standby_Standby012, Standby_Standby013, Standby_Standby014, Standby_Standby015,
