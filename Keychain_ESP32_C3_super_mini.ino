@@ -45,6 +45,9 @@ void setup() {
   esp_sleep_enable_timer_wakeup(TIME_TO_SLEEP * uS_TO_S_FACTOR);
   esp_deep_sleep_enable_gpio_wakeup(BIT(TTP223_PIN), ESP_GPIO_WAKEUP_GPIO_HIGH);
 
+  // I2C ngebut 800 kHz biar FPS video aman
+  Wire.setClock(800000);
+  
   display.clearDisplay();
   display.display();
   delay(300);
