@@ -20,12 +20,12 @@ float BatteryManager::readVoltage() {
   // 10k/10k divider means V_bat = 2 * V_adc
    uint32_t sum = 0;
 
-  for (int i = 0; i < 10; i++)
+  for (int i = 0; i < 4; i++)
   {
     sum += analogRead(PIN_BAT_ADC);
   }
 
-  int raw = sum / 10;
+  int raw = sum / 4;
 //  int raw = analogRead(PIN_BAT_ADC);
   float v_adc = (raw / 4095.0) * 3.3;
 
