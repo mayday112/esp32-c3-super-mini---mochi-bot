@@ -13,28 +13,17 @@ https://triwahyu45.github.io/ESP32-OLED-Video-Converter/
 https://animator.wokwi.com/
 https://www.oledanimationmaker.com/
 
-Koneksi esp32 ke Oled lcd
-3.3v -> vcc
-gnd -> gnd
-8 -> sda
-9 -> scl
+<img width="248" height="179" alt="image" src="https://github.com/user-attachments/assets/31401d59-cb74-4ac7-9f68-eb1b840fef93" />
 
-esp32 ke tp223
-3.3v -> vcc
-4 -> out
-gnd -> gnd
+<img width="261" height="237" alt="image" src="https://github.com/user-attachments/assets/569b8292-50ae-41f4-901c-c9433267d94b" />
 
-untuk battery manager
-esp32 ke tp4056
-5v -> out+
-gnd -> out-
-2 -> 7 (chrg)
-1 -> 6 (stdby)
+<img width="296" height="242" alt="image" src="https://github.com/user-attachments/assets/59b4d230-5353-4a81-b27b-20ed14e72902" />
 
-esp32 ke resistor 10k/10k (divider)
-5v<-=10k=||=10k=->gnd
-         ||
-         3
+<img width="193" height="203" alt="image" src="https://github.com/user-attachments/assets/2c2aa267-9d1b-4e7f-8f99-10ec6d85ef8a" />
+
+<img width="450" height="294" alt="image" src="https://github.com/user-attachments/assets/688ebdf2-84a2-44a0-94dc-58b2fc775539" />
+
+
 
 Flashing:
 saya asumsikan anda benar-benar pernah melakukan flash pada esp32 c3 super mini sebelumnya
